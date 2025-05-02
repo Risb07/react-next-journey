@@ -1,6 +1,15 @@
 export default function Contact() {
-
-
+  async function submitForm(formData) {
+    "use server";
+    const formFields = {
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+    console.log("formFields", formFields);
+    console.log("TODO: Send these form field values to a backend");
+    return formFields;
+  }
+  
   return (
     <main className="max-w-md mx-auto p-6 bg-white shadow-md rounded-md">
       <h1 className="text-2xl font-bold text-center mb-6">Contact us!</h1>
