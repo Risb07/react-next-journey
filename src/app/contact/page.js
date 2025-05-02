@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <main className="max-w-md mx-auto p-6 bg-white shadow-md rounded-md">
       <h1 className="text-2xl font-bold text-center mb-6">Contact us!</h1>
-      <form className="space-y-4">
+      <form className="space-y-4" action={submitForm}>
         <div>
           <label
             htmlFor="email"
